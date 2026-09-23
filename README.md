@@ -2,13 +2,16 @@ Alcohol Label Scanner
 
   A lightweight, single-page web application that extracts structured data from alcohol beverage labels. Users can either upload an image or take a photo using their device's camera. The application uses AI to read the      label and parse the information into a structured format.
 
+  The application uses a free tier of Gemini and has a limit of 10 to 15 Requests Per Minute.
+
+  
 Features
 
   Dual Input: Supports both file uploads and live camera capture.
   
   Client-Side Optimization: Resizes images locally in the browser using HTML5 Canvas to reduce API payload size and improve transmission speed.
   
-  AI-Powered Extraction: Utilizes Google's Gemini Vision models to accurately identify and categorize label text.
+  AI-Powered Extraction: Utilizes Google's Gemini Vision models to accurately identify and categorize label text. 
   
   Clean UI: Dark-themed, responsive interface designed for both desktop and mobile use.
 
