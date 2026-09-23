@@ -266,6 +266,9 @@
                 <div>Alcohol Content: "${getValue(['alcohol', 'abv', 'content'])}"</div>
                 <div>Net Contents: "${getValue(['net', 'volume', 'ml'])}"</div>
                 <div>Government Warning: "${getValue(['warning', 'government'])}"</div>
+                <div style="color: #a0a0a0; font-size: 13px; text-align: center; font-style: italic;">
+                    Note: The raw scan result is returned as a structured JSON object, making it easy to parse and integrate into other systems or databases.
+                </div>
             `;
 
             const outputContainer = document.getElementById('output-container');
