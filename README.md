@@ -28,6 +28,15 @@ Approach and Architecture
   Display: The application parses the returned JSON, filters for the specific display fields required by the UI, and renders them on screen.
 
 
+Error Handling
+
+  The application includes built-in error handling to ensure a resilient user experience:
+  
+  Camera Permissions & Hardware: If the browser cannot access a camera (e.g., permissions are denied by the user, or no camera is attached to the device), the application catches the getUserMedia rejection and presents an   alert notifying the user that the camera is unavailable.
+  
+  API and Network Failures: If the network request to the backend proxy fails, the backend throws an error, or the AI model fails to return a parseable JSON response, the frontend catches the error gracefully. The UI        hides the loading state and displays a clear, red error message ("Error: The API request failed. Please retry in a minute.") rather than failing silently.
+
+
 Tools Used
 
   Frontend: HTML5, CSS3, Vanilla JavaScript (No frameworks required).
